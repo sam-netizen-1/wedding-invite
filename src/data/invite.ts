@@ -57,7 +57,7 @@ export const couple: CoupleSide[] = [
 
 export const weddingDetails = {
   date: "Tuesday, 5 May 2026",
-  dayDetail: "Varmala and blessings at 11:00 AM",
+  dayDetail: "Nikasi at 9:00 AM • Varmala and blessings at 11:00 AM",
   muhurta: "Paanigrahan at 3:30 PM",
   targetDate: "2026-05-05T15:30:00+05:30",
   venueTitle: "Rajwada Palace",
@@ -72,41 +72,11 @@ export const weddingDetails = {
 
 export const ceremonies: Ceremony[] = [
   {
-    title: "Kumkum",
-    subtitle: "Shagun ceremony",
-    date: "Sunday, 3 May 2026",
-    time: "10:30 AM",
-    location: "Our residence, Ralegaon",
-    description: "An intimate family ceremony marking the beginning of the wedding festivities.",
-    icon: "✦",
-    tone: "gold",
-  },
-  {
-    title: "Mayra",
-    subtitle: "Maternal family celebration",
-    date: "Sunday, 3 May 2026",
-    time: "3:30 PM",
-    location: "Our residence, Ralegaon",
-    description: "A warm gathering hosted with the love and presence of the maternal side of the family.",
-    icon: "❁",
-    tone: "terracotta",
-  },
-  {
-    title: "Baraat Departure",
-    subtitle: "Journey to Nagpur",
-    date: "Monday, 4 May 2026",
-    time: "7:00 PM",
-    location: "Departs from our residence for Nagpur",
-    description: "The wedding procession leaves in the evening for the celebration in Nagpur.",
-    icon: "➳",
-    tone: "olive",
-  },
-  {
     title: "Nikasi",
     subtitle: "Groom's procession",
     date: "Tuesday, 5 May 2026",
     time: "9:00 AM",
-    location: "Ceremonial departure for the wedding's venue",
+    location: "Ceremonial departure for Rajwada Palace, Nagpur",
     description:
       "The groom sets out for the wedding venue as friends and family dance, celebrate and accompany the procession.",
     icon: "✺",

@@ -262,9 +262,9 @@ export function WeddingInvite() {
                 <p className="section-kicker">Celebration Together</p>
                 <h3>The Wedding Festivities</h3>
                 <p>
-                  From the first family rituals to the sacred wedding ceremony,
-                  each event leads into a shared celebration of joy,
-                  togetherness and tradition.
+                  Join us for the sacred wedding celebrations, from the
+                  joyful nikasi and varmala to the auspicious paanigrahan
+                  ceremony in the presence of family and friends.
                 </p>
               </div>
             </div>
