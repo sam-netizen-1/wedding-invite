@@ -72,7 +72,7 @@ h3 {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  padding: 44px 16px 72px;
+  padding: 28px 16px 64px;
 }
 
 .page-shell::before {
@@ -114,7 +114,7 @@ h3 {
 
 .invite-header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .invite-symbol,
@@ -496,8 +496,8 @@ h3 {
 
 .introduction-copy {
   display: grid;
-  gap: 0.28rem;
-  padding: 0.2rem 0.25rem 0.05rem;
+  gap: 0.34rem;
+  padding: 0.3rem 0.45rem 0.12rem;
   text-align: center;
 }
 
@@ -512,10 +512,11 @@ h3 {
 .introduction-copy h3 {
   font-size: 2.2rem;
   line-height: 0.96;
+  color: #2f2119;
 }
 
 .introduction-credential {
-  color: var(--gold);
+  color: #9c723e;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -524,14 +525,14 @@ h3 {
 
 .introduction-line {
   margin-top: 0.45rem;
-  color: #5d4a3d;
+  color: #4b392d;
   line-height: 1.65;
   font-size: 0.9rem;
 }
 
 .introduction-line-soft {
   margin-top: 0.1rem;
-  color: var(--muted);
+  color: #6a5748;
 }
 
 .countdown-panel {

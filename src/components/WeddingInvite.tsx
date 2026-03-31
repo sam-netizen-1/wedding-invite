@@ -7,6 +7,7 @@ import {
   ceremonies,
   couple,
   familySignoff,
+  siteMetadata,
   specialInvitees,
   weddingDetails,
 } from "../data/invite";
@@ -27,18 +28,18 @@ const countdownLabels: Array<keyof Countdown> = [
 
 const introductionMoments = [
   {
-    title: "Yogesh",
+    title: couple[0].name,
     subtitle: "The groom",
     image: groomPortrait,
-    alt: "Yogesh in traditional ivory sherwani",
+    alt: `${couple[0].name} in traditional ivory sherwani`,
     className: "introduction-card-groom",
     person: couple[0],
   },
   {
-    title: "Rajee",
+    title: couple[1].name,
     subtitle: "The bride",
     image: bridePortrait,
-    alt: "Rajee in bridal attire",
+    alt: `${couple[1].name} in bridal attire`,
     className: "introduction-card-bride",
     person: couple[1],
   },
@@ -88,6 +89,15 @@ export function WeddingInvite() {
     }, 1000);
 
     return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    document.title = siteMetadata.title;
+
+    const descriptionMeta = document.querySelector('meta[name="description"]');
+    if (descriptionMeta) {
+      descriptionMeta.setAttribute("content", siteMetadata.description);
+    }
   }, []);
 
   return (
@@ -245,7 +255,7 @@ export function WeddingInvite() {
                 <img
                   className="celebration-hero-image"
                   src={coupleHero}
-                  alt="Yogesh and Rajee in coordinated traditional wedding attire"
+                  alt={`${couple[0].name} and ${couple[1].name} in coordinated traditional wedding attire`}
                 />
               </div>
               <div className="celebration-hero-copy">

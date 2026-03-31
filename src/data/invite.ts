@@ -22,8 +22,14 @@ export type Invitee = {
   city: string;
 };
 
+export const siteMetadata = {
+  title: "Yogesh & Rajee | Wedding Invitation",
+  description:
+    "A wedding invitation for Yogesh and Rajee, celebrating their union on Tuesday, 5 May 2026 at Rajwada Palace, Mahal, Nagpur.",
+};
+
 export const blessings = {
-  overline: "A Wedding Invitation",
+  overline: "Wedding Invitation",
   invocation:
     "With the blessings of Shri Mahaviray Namah and Shri Ganeshaya Namah",
   familyNote:
@@ -57,7 +63,7 @@ export const weddingDetails = {
   venueTitle: "Rajwada Palace",
   venueCity: "Mahal, Nagpur",
   venueAddress:
-    "The celebrations continue through the day, culminating in the sacred ceremony at 3:30 PM.",
+    "Please use the map link below for exact directions to the venue.",
   venueMapUrl: "https://maps.app.goo.gl/mef3eGE8uM8fRFQa8",
   preface: "On the auspicious day of",
   closing:
