@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import bridePortrait from "../assets/generated/bride-illustrated.png";
-import coupleHero from "../assets/generated/couple-illustrated.png";
-import groomPortrait from "../assets/generated/groom-illustrated.png";
+import bridePortrait from "../assets/generated/bride-illustrated.webp";
+import coupleHero from "../assets/generated/couple-illustrated.webp";
+import groomPortrait from "../assets/generated/groom-illustrated.webp";
 import {
   blessings,
   ceremonies,
@@ -108,8 +108,12 @@ export function WeddingInvite() {
       <section className="invite">
         <header className="invite-header">
           <div className="invite-symbol">॥ ॐ ॥</div>
-          <p className="header-note">{blessings.invocation1}</p>
-          <p className="header-note">{blessings.invocation2}</p>
+          <p className="header-note header-note-invocation">
+            {blessings.invocation1}
+          </p>
+          <p className="header-note header-note-invocation">
+            {blessings.invocation2}
+          </p>
           <p className="eyebrow">{blessings.overline}</p>
 
           <div className="motif-row" aria-hidden="true">
@@ -260,12 +264,12 @@ export function WeddingInvite() {
                 />
               </div>
               <div className="celebration-hero-copy">
-                <p className="section-kicker">Celebration Together</p>
-                <h3>The Wedding Festivities</h3>
+                <p className="section-kicker">Tuesday • 5 May 2026</p>
+                <h3>The Wedding Day at Rajwada Palace</h3>
                 <p>
-                  From the first family rituals to the sacred wedding ceremony,
-                  each event leads into a shared celebration of joy,
-                  togetherness and tradition.
+                  The heart of the invitation is the wedding day itself, from
+                  the joyful nikasi in the morning to varmala, blessings and
+                  the sacred paanigrahan ceremony.
                 </p>
               </div>
             </div>
@@ -273,7 +277,11 @@ export function WeddingInvite() {
             <div className="ceremony-grid">
               {ceremonies.map((ceremony) => (
                 <article
-                  className={`ceremony-card ceremony-${ceremony.tone}`}
+                  className={`ceremony-card ceremony-${ceremony.tone} ${
+                    ceremony.date === weddingDetails.date
+                      ? "ceremony-featured"
+                      : "ceremony-muted"
+                  }`}
                   key={ceremony.title}
                 >
                   <div className="ceremony-stamp">{ceremony.icon}</div>
