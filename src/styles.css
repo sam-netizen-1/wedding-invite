@@ -79,6 +79,32 @@ h3 {
   }
 }
 
+@keyframes iconBloom {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 12px 24px rgba(110, 78, 49, 0.08);
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 16px 30px rgba(110, 78, 49, 0.14);
+  }
+}
+
+@keyframes ornamentGlow {
+  0%,
+  100% {
+    opacity: 0.78;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
 .page-shell {
   position: relative;
   overflow: hidden;
@@ -235,6 +261,7 @@ h3 {
   background: rgba(255, 252, 247, 0.78);
   border: 1px solid rgba(182, 138, 76, 0.14);
   box-shadow: 0 10px 24px rgba(88, 62, 44, 0.08);
+  animation: ornamentGlow 4.8s ease-in-out infinite;
 }
 
 .mini-motif-badge .mini-motif {
@@ -399,6 +426,7 @@ h3 {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(235, 222, 204, 0.92));
   border: 1px solid rgba(182, 138, 76, 0.18);
   box-shadow: 0 12px 24px rgba(110, 78, 49, 0.08);
+  animation: iconBloom 5.5s ease-in-out infinite;
 }
 
 .section-kicker {
@@ -1098,24 +1126,70 @@ h3 {
   }
 
   .schedule-sticker {
-    display: none;
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+    opacity: 0.9;
   }
 
-  .ceremonial-symbol-1,
-  .ceremonial-symbol-2,
-  .ceremonial-symbol-3,
-  .ceremonial-symbol-4,
-  .ceremonial-stage-symbol-1,
-  .ceremonial-stage-symbol-2,
+  .schedule-sticker-groom {
+    top: 16px;
+    right: 10px;
+  }
+
+  .schedule-sticker-bride {
+    top: 210px;
+    left: 10px;
+    transform: rotate(-6deg);
+  }
+
+  .ceremonial-symbol {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+    opacity: 0.82;
+  }
+
+  .ceremonial-symbol-1 {
+    top: 72px;
+    left: 18px;
+  }
+
+  .ceremonial-symbol-2 {
+    top: 162px;
+    right: 18px;
+  }
+
+  .ceremonial-symbol-3 {
+    bottom: 122px;
+    left: 24px;
+  }
+
+  .ceremonial-symbol-4 {
+    right: 24px;
+    bottom: 34px;
+  }
+
+  .ceremonial-stage-symbol-1 {
+    top: -12px;
+    left: 12px;
+  }
+
+  .ceremonial-stage-symbol-2 {
+    top: 132px;
+    right: 18px;
+  }
+
   .ceremonial-stage-symbol-3 {
-    transform: scale(0.9);
+    bottom: 12px;
+    right: 18px;
   }
 }
 
 @media (max-width: 720px) {
   .page-shell {
-    padding-top: 26px;
-    padding-bottom: 48px;
+    padding-top: 18px;
+    padding-bottom: 42px;
   }
 
   .page-shell::before {
@@ -1123,12 +1197,22 @@ h3 {
   }
 
   .countdown-grid {
-    gap: 0.7rem;
+    gap: 0.6rem;
   }
 
   .countdown-card::before {
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .countdown-value {
+    font-size: 1.45rem;
+  }
+
+  .countdown-label {
+    margin-top: 16px;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
   }
 
   .introduction-image-frame {
@@ -1144,6 +1228,95 @@ h3 {
   }
 
   .ceremonial-drift {
-    display: none;
+    display: block;
+  }
+
+  .ceremonial-symbol {
+    width: 24px;
+    height: 24px;
+    font-size: 0.72rem;
+    box-shadow: 0 8px 18px rgba(88, 62, 44, 0.08);
+  }
+
+  .ceremonial-symbol-1 {
+    top: 66px;
+    left: 10px;
+  }
+
+  .ceremonial-symbol-2 {
+    top: 138px;
+    right: 12px;
+  }
+
+  .ceremonial-symbol-3 {
+    bottom: 108px;
+    left: 14px;
+  }
+
+  .ceremonial-symbol-4 {
+    right: 14px;
+    bottom: 24px;
+  }
+
+  .ceremonial-stage-symbol-1 {
+    top: -10px;
+    left: 10px;
+  }
+
+  .ceremonial-stage-symbol-2 {
+    top: 118px;
+    right: 14px;
+  }
+
+  .ceremonial-stage-symbol-3 {
+    bottom: 14px;
+    right: 12px;
+  }
+
+  .schedule-sticker {
+    width: 52px;
+    height: 52px;
+    padding: 3px;
+  }
+
+  .schedule-sticker-groom {
+    top: 12px;
+    right: 8px;
+  }
+
+  .schedule-sticker-bride {
+    top: 196px;
+    left: 8px;
+  }
+
+  .celebration-hero-card {
+    gap: 0.8rem;
+    padding: 0.85rem;
+  }
+
+  .celebration-hero-copy {
+    padding: 0.15rem 0.2rem 0.35rem;
+  }
+
+  .hero-card,
+  .hosts-card {
+    border-radius: 24px;
+  }
+
+  .introduction-card,
+  .date-banner,
+  .venue-block,
+  .ceremony-card,
+  .host-chip {
+    border-radius: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blessing-icon,
+  .mini-motif-badge,
+  .ceremonial-symbol,
+  .schedule-sticker {
+    animation: none;
   }
 }
