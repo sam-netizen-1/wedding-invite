@@ -65,7 +65,7 @@ export const weddingDetails = {
   venueTitle: "Rajwada Palace",
   venueCity: "Mahal, Nagpur",
   venueAddress:
-    "Please use the map link below for exact directions to the venue.",
+    "Empress City Road, near Tata Parsi School, Ganjipeth, Nagpur 440002",
   venueMapUrl: "https://maps.app.goo.gl/mef3eGE8uM8fRFQa8",
   preface: "On the auspicious day of",
   closing:

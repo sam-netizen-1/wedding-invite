@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import bridePortrait from "../assets/generated/bride-illustrated.png";
-import coupleHero from "../assets/generated/couple-illustrated.png";
-import groomPortrait from "../assets/generated/groom-illustrated.png";
+import bridePortrait from "../assets/generated/bride-illustrated.webp";
+import coupleHero from "../assets/generated/couple-illustrated.webp";
+import groomPortrait from "../assets/generated/groom-illustrated.webp";
 import {
   blessings,
   ceremonies,
@@ -58,6 +58,9 @@ const celebrationStickers = [
   },
 ] as const;
 
+const heroSymbols = ["✦", "❁", "✧", "✺"] as const;
+const celebrationSymbols = ["✦", "❁", "✧"] as const;
+
 function calculateCountdown(targetDate: string): Countdown {
   const difference = Math.max(new Date(targetDate).getTime() - Date.now(), 0);
 
@@ -108,8 +111,12 @@ export function WeddingInvite() {
       <section className="invite">
         <header className="invite-header">
           <div className="invite-symbol">॥ ॐ ॥</div>
-          <p className="header-note">{blessings.invocation1}</p>
-          <p className="header-note">{blessings.invocation2}</p>
+          <p className="header-note header-note-invocation">
+            {blessings.invocation1}
+          </p>
+          <p className="header-note header-note-invocation">
+            {blessings.invocation2}
+          </p>
           <p className="eyebrow">{blessings.overline}</p>
 
           <div className="motif-row" aria-hidden="true">
@@ -139,6 +146,16 @@ export function WeddingInvite() {
           <span className="corner-flower corner-top-right">✦</span>
           <span className="corner-flower corner-bottom-left">✦</span>
           <span className="corner-flower corner-bottom-right">✦</span>
+          <div className="ceremonial-drift ceremonial-drift-hero" aria-hidden="true">
+            {heroSymbols.map((symbol, index) => (
+              <span
+                className={`ceremonial-symbol ceremonial-symbol-${index + 1}`}
+                key={`${symbol}-${index}`}
+              >
+                {symbol}
+              </span>
+            ))}
+          </div>
 
           <div className="blessing-block">
             <div className="blessing-icon">✧</div>
@@ -241,6 +258,21 @@ export function WeddingInvite() {
           </div>
 
           <div className="celebration-stage">
+            <div
+              className="ceremonial-drift ceremonial-drift-stage"
+              aria-hidden="true"
+            >
+              {celebrationSymbols.map((symbol, index) => (
+                <span
+                  className={`ceremonial-symbol ceremonial-stage-symbol-${
+                    index + 1
+                  }`}
+                  key={`${symbol}-stage-${index}`}
+                >
+                  {symbol}
+                </span>
+              ))}
+            </div>
             {celebrationStickers.map((sticker) => (
               <div
                 className={`schedule-sticker ${sticker.className}`}
@@ -260,12 +292,12 @@ export function WeddingInvite() {
                 />
               </div>
               <div className="celebration-hero-copy">
-                <p className="section-kicker">Celebration Together</p>
-                <h3>The Wedding Festivities</h3>
+                <p className="section-kicker">Tuesday • 5 May 2026</p>
+                <h3>The Wedding Day at Rajwada Palace</h3>
                 <p>
-                  Join us for the sacred wedding celebrations, from the
-                  joyful nikasi and varmala to the auspicious paanigrahan
-                  ceremony in the presence of family and friends.
+                  The heart of the invitation is the wedding day itself, from
+                  the joyful nikasi in the morning to varmala, blessings and
+                  the sacred paanigrahan ceremony.
                 </p>
               </div>
             </div>
@@ -273,7 +305,11 @@ export function WeddingInvite() {
             <div className="ceremony-grid">
               {ceremonies.map((ceremony) => (
                 <article
-                  className={`ceremony-card ceremony-${ceremony.tone}`}
+                  className={`ceremony-card ceremony-${ceremony.tone} ${
+                    ceremony.date === weddingDetails.date
+                      ? "ceremony-featured"
+                      : "ceremony-muted"
+                  }`}
                   key={ceremony.title}
                 >
                   <div className="ceremony-stamp">{ceremony.icon}</div>
