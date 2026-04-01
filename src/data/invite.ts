@@ -145,7 +145,7 @@ export const specialInvitees: Invitee[] = [
   { name: "Sau. Seema Nitinrajji Kothari", city: "Darwha" },
   { name: "Sau. Nidhi Sachinji Kothari", city: "Yavatmal" },
   { name: "Sau. Palak Adityaji Oswal", city: "Hinganghat" },
-  { name: "Sau. Saiyami Pavankumarji Zamad", city: "Wani" },
+  { name: "Sau. Sayami Pavanji Zamad", city: "Wani" },
 ];
 
 export const familySignoff = {
