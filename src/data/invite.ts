@@ -30,8 +30,8 @@ export const siteMetadata = {
 
 export const blessings = {
   overline: "Wedding Invitation",
-  invocation:
-    "|| Shri Mahaviray Namah and Shri Ganeshaya Namah ||",
+  invocation1: "|| Shri Mahaviray Namah  ||",
+  invocation2: "|| Shri Ganeshaya Namah  ||",
   familyNote:
     "With the love of our elders and the blessings of revered Guru Bhagwants, we warmly invite you to celebrate this joyful union with us.",
 };
@@ -41,7 +41,8 @@ export const couple: CoupleSide[] = [
     role: "Groom",
     name: "Yogesh",
     credential: "M.Tech",
-    primaryLine: "Beloved son of Smt. Snehalji Bothara and Late Shri Deepakkumarji Bothara",
+    primaryLine:
+      "Beloved son of Smt. Snehalji Bothara and Late Shri Deepakkumarji Bothara",
     secondaryLine:
       "Grandson of Late Liladevi and Late Shri Bhawarilalji Pukhrajji Bothara",
   },
@@ -49,7 +50,8 @@ export const couple: CoupleSide[] = [
     role: "Bride",
     name: "Rajee",
     credential: "BDS",
-    primaryLine: "Beloved daughter of Smt. Manishaji and Late Shri Deepakkumarji Kochar",
+    primaryLine:
+      "Beloved daughter of Smt. Manishaji and Late Shri Deepakkumarji Kochar",
     secondaryLine:
       "Granddaughter of Late Dhanalakshmidevi and Late Shri Leherchandji Kochar, Nagpur",
   },
@@ -88,7 +90,8 @@ export const ceremonies: Ceremony[] = [
     date: "Tuesday, 5 May 2026",
     time: "11:00 AM",
     location: "Rajwada Palace, Mahal, Nagpur",
-    description: "The couple exchanges garlands and receives the blessings of family and friends.",
+    description:
+      "The couple exchanges garlands and receives the blessings of family and friends.",
     icon: "✦",
     tone: "champagne",
   },
@@ -98,7 +101,8 @@ export const ceremonies: Ceremony[] = [
     date: "Tuesday, 5 May 2026",
     time: "3:30 PM",
     location: "Rajwada Palace, Mahal, Nagpur",
-    description: "The auspicious marriage ceremony and the heart of the celebration.",
+    description:
+      "The auspicious marriage ceremony and the heart of the celebration.",
     icon: "✧",
     tone: "gold",
   },
