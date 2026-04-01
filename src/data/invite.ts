@@ -31,7 +31,7 @@ export const siteMetadata = {
 export const blessings = {
   overline: "Wedding Invitation",
   invocation:
-    "With the blessings of Shri Mahaviray Namah and Shri Ganeshaya Namah",
+    "|| Shri Mahaviray Namah and Shri Ganeshaya Namah ||",
   familyNote:
     "With the love of our elders and the blessings of revered Guru Bhagwants, we warmly invite you to celebrate this joyful union with us.",
 };
