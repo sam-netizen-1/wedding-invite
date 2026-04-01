@@ -178,9 +178,9 @@ export function WeddingInvite() {
           <div className="motif-row motif-row-compact" aria-hidden="true">
             <span className="motif-line motif-line-short" />
             <div className="mini-motif-badge">
-              <img className="mini-motif" src={groomPortrait} alt="" />
-              <span className="mini-motif-monogram">#RajYog</span>
               <img className="mini-motif" src={bridePortrait} alt="" />
+              <span className="mini-motif-monogram">#RajYog</span>
+              <img className="mini-motif" src={groomPortrait} alt="" />
             </div>
             <span className="motif-line motif-line-short" />
           </div>
