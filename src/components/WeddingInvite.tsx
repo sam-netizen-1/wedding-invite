@@ -58,6 +58,9 @@ const celebrationStickers = [
   },
 ] as const;
 
+const heroSymbols = ["✦", "❁", "✧", "✺"] as const;
+const celebrationSymbols = ["✦", "❁", "✧"] as const;
+
 function calculateCountdown(targetDate: string): Countdown {
   const difference = Math.max(new Date(targetDate).getTime() - Date.now(), 0);
 
@@ -143,6 +146,16 @@ export function WeddingInvite() {
           <span className="corner-flower corner-top-right">✦</span>
           <span className="corner-flower corner-bottom-left">✦</span>
           <span className="corner-flower corner-bottom-right">✦</span>
+          <div className="ceremonial-drift ceremonial-drift-hero" aria-hidden="true">
+            {heroSymbols.map((symbol, index) => (
+              <span
+                className={`ceremonial-symbol ceremonial-symbol-${index + 1}`}
+                key={`${symbol}-${index}`}
+              >
+                {symbol}
+              </span>
+            ))}
+          </div>
 
           <div className="blessing-block">
             <div className="blessing-icon">✧</div>
@@ -245,6 +258,21 @@ export function WeddingInvite() {
           </div>
 
           <div className="celebration-stage">
+            <div
+              className="ceremonial-drift ceremonial-drift-stage"
+              aria-hidden="true"
+            >
+              {celebrationSymbols.map((symbol, index) => (
+                <span
+                  className={`ceremonial-symbol ceremonial-stage-symbol-${
+                    index + 1
+                  }`}
+                  key={`${symbol}-stage-${index}`}
+                >
+                  {symbol}
+                </span>
+              ))}
+            </div>
             {celebrationStickers.map((sticker) => (
               <div
                 className={`schedule-sticker ${sticker.className}`}
