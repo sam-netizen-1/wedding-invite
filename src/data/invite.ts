@@ -41,7 +41,7 @@ export const couple: CoupleSide[] = [
     role: "Groom",
     name: "Yogesh",
     credential: "M.Tech",
-    primaryLine: "Beloved son of Snehal Bothara and Late Shri Deepakkumarji Bothara",
+    primaryLine: "Beloved son of Smt. Snehalji Bothara and Late Shri Deepakkumarji Bothara",
     secondaryLine:
       "Grandson of Late Liladevi and Late Shri Bhawarilalji Pukhrajji Bothara",
   },
