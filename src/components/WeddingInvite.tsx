@@ -108,8 +108,9 @@ export function WeddingInvite() {
       <section className="invite">
         <header className="invite-header">
           <div className="invite-symbol">॥ ॐ ॥</div>
+          <p className="header-note">{blessings.invocation1}</p>
+          <p className="header-note">{blessings.invocation2}</p>
           <p className="eyebrow">{blessings.overline}</p>
-          <p className="header-note">{blessings.invocation}</p>
 
           <div className="motif-row" aria-hidden="true">
             <span className="motif-line" />

@@ -30,8 +30,8 @@ export const siteMetadata = {
 
 export const blessings = {
   overline: "Wedding Invitation",
-  invocation:
-    "|| Shri Mahaviray Namah and Shri Ganeshaya Namah ||",
+  invocation1: "|| Shri Mahaviray Namah  ||",
+  invocation2: "|| Shri Ganeshaya Namah  ||",
   familyNote:
     "With the love of our elders and the blessings of revered Guru Bhagwants, we warmly invite you to celebrate this joyful union with us.",
 };
@@ -41,7 +41,8 @@ export const couple: CoupleSide[] = [
     role: "Groom",
     name: "Yogesh",
     credential: "M.Tech",
-    primaryLine: "Beloved son of Smt. Snehalji Bothara and Late Shri Deepakkumarji Bothara",
+    primaryLine:
+      "Beloved son of Smt. Snehalji Bothara and Late Shri Deepakkumarji Bothara",
     secondaryLine:
       "Grandson of Late Liladevi and Late Shri Bhawarilalji Pukhrajji Bothara",
   },
@@ -49,7 +50,8 @@ export const couple: CoupleSide[] = [
     role: "Bride",
     name: "Rajee",
     credential: "BDS",
-    primaryLine: "Beloved daughter of Smt. Manishaji and Late Shri Deepakkumarji Kochar",
+    primaryLine:
+      "Beloved daughter of Smt. Manishaji and Late Shri Deepakkumarji Kochar",
     secondaryLine:
       "Granddaughter of Late Dhanalakshmidevi and Late Shri Leherchandji Kochar, Nagpur",
   },
@@ -77,7 +79,8 @@ export const ceremonies: Ceremony[] = [
     date: "Sunday, 3 May 2026",
     time: "10:30 AM",
     location: "Our residence, Ralegaon",
-    description: "An intimate family ceremony marking the beginning of the wedding festivities.",
+    description:
+      "An intimate family ceremony marking the beginning of the wedding festivities.",
     icon: "✦",
     tone: "gold",
   },
@@ -87,7 +90,8 @@ export const ceremonies: Ceremony[] = [
     date: "Sunday, 3 May 2026",
     time: "3:30 PM",
     location: "Our residence, Ralegaon",
-    description: "A warm gathering hosted with the love and presence of the maternal side of the family.",
+    description:
+      "A warm gathering hosted with the love and presence of the maternal side of the family.",
     icon: "❁",
     tone: "terracotta",
   },
@@ -97,7 +101,8 @@ export const ceremonies: Ceremony[] = [
     date: "Monday, 4 May 2026",
     time: "7:00 PM",
     location: "Departs from our residence for Nagpur",
-    description: "The wedding procession leaves in the evening for the celebration in Nagpur.",
+    description:
+      "The wedding procession leaves in the evening for the celebration in Nagpur.",
     icon: "➳",
     tone: "olive",
   },
@@ -118,7 +123,8 @@ export const ceremonies: Ceremony[] = [
     date: "Tuesday, 5 May 2026",
     time: "11:00 AM",
     location: "Rajwada Palace, Mahal, Nagpur",
-    description: "The couple exchanges garlands and receives the blessings of family and friends.",
+    description:
+      "The couple exchanges garlands and receives the blessings of family and friends.",
     icon: "✦",
     tone: "champagne",
   },
@@ -128,7 +134,8 @@ export const ceremonies: Ceremony[] = [
     date: "Tuesday, 5 May 2026",
     time: "3:30 PM",
     location: "Rajwada Palace, Mahal, Nagpur",
-    description: "The auspicious marriage ceremony and the heart of the celebration.",
+    description:
+      "The auspicious marriage ceremony and the heart of the celebration.",
     icon: "✧",
     tone: "gold",
   },
